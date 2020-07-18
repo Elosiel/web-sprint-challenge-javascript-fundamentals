@@ -27,9 +27,15 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+ForEach() does not return an array, but allows you to change the items in the original array and the map() will return an array of the same length as the original.
+
 2. Explain the difference between a callback and a higher order function.
 
+A higher-order function is a function that takes another function as an argument. A callback function is what is passed to another function, such as those passed to higher-order functions.
+
 3. What is closure?
+
+A higher-order function is a function that takes another function as an argument. A callback function is what is passed to another function, such as those passed to higher-order functions.
 
 4. Describe the four rules of the 'this' keyword.
 
