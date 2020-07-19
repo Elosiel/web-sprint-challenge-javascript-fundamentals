@@ -62,8 +62,12 @@ console.log(lowPopulationAnimals);
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-let populationTotal = 0;
-console.log(populationTotal);
+
+let population = zooAnimals.reduce((acc, number) => {
+  return acc += number["population"];
+},0)
+
+console.log(population);
 
 
 // ==== Callbacks ====  
@@ -75,6 +79,10 @@ console.log(populationTotal);
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 
+function consume(a, b, cb){
+    return cb(a, b);
+}
+
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -82,6 +90,23 @@ console.log(populationTotal);
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
+
+function add(num1, num2){
+    return num1 + num2;
+}
+
+function multiply(num1, num2){
+    return num1 * num2;
+}
+
+function greeting(fname, lname){
+    return `hello ${fname} ${lname}, nice to meet you!`;    
+}
+
+
+console.log(consume(1, 2, add));
+console.log(consume(1, 2, multiply));
+console.log(consume("Elosiel", "Guedes", greeting));
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 // console.log(consume(2, 2, add)); // 4
