@@ -108,7 +108,7 @@ console.log(consume(1, 2, add));
 console.log(consume(1, 2, multiply));
 console.log(consume("Elosiel", "Guedes", greeting));
 
-/* Step 3: Check your work by un-commenting the following calls to consume(): */
+/* Step 3: Check your work by un-commenting the following calls to consume():  */
 console.log(consume(2, 2, add)); // 4
 console.log(consume(10, 16, multiply)); // 160
 console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
