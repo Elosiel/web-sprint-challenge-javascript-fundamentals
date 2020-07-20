@@ -38,8 +38,17 @@ A higher-order function is a function that takes another function as an argument
 A closure is a function that "remembers" the environment or lexical scope in which it was created.
 
 4. Describe the four rules of the 'this' keyword.
+Whenever we use JavaScript’s call or apply method, this is explicitly defined.
 
+Principle 1: Window/Global Object Binding;
+When in the global scope, the value of “this” will be the window/console Object
 
+Principle 2: Implicit Binding;
+Whenever a preceding dot calls a function, the object before the dot is this
+
+Principle 3: New binding
+
+Principle 4: Explicit binding
 
 5. Why do we need super() in an extended class?
 
