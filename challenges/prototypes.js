@@ -26,6 +26,8 @@ CuboidMaker.prototype.volume = function(){
   return this.length * this.width * this.height;
 }
 
+console.log 
+
 
 
 /* == Step 3: Surface Area Method ==
